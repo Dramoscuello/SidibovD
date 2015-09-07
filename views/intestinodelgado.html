@@ -1,0 +1,71 @@
+<style>
+    .logotematica{
+    width: 250px;
+    height:250px;
+    background-size: contain;
+    display:block;
+    position: relative;
+    top: -50px;
+    margin-bottom: 0;
+    background-image: url(../images/logo.png);
+}
+.contenido{
+    background-color: #EDF3F3;
+}
+@font-face {
+    font-family: "FuturaBT-Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/ufonts.com_futurabt-bold-opentype.otf);
+    
+}
+
+.sub_tematica{
+    font-family: "FuturaBT-Bold";
+    color: black;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: -0.07em;
+    text-align: center;
+    margin-top: 0;
+}
+.nav_tematica{
+    list-style: none;
+}
+.item{
+    text-align: center;
+    display: block;
+}
+.item a{
+    color: black;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.item a:hover{
+    background-color: #EDF3F3;
+    text-decoration: none;
+}
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#/" class="logotematica"></a>
+            <div class="apartado_tematica">
+                <h2 class="sub_tematica">sidibov</h2>
+                <ul class="nav_tematica" ng-repeat="val in content">
+                     <li class="item"><a href="{{val.link}}">{{val.titulo}}</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-9 contenido">
+             <h2>Intestino delgado</h2>
+    <p>Desde el abomaso, el alimento sale el estómago y entra el intestino delgado. El intestino delgado incorpora tres características que justifican su inmensa superficie de absorción: 
+<li>Pliegues mucosos: la superficie interior del intestino delgado no está plana, posee dobleces circulares, que no sólo aumentan la superficie, sino que  ayudan a mezclar la ingesta actuando como deflectores.</li>
+        <li>Villi: la mucosa forma multitudes  proyecciones que salen al lumen y se cubren con células de epiteliales. Las enzimas que secretan los villi ayudan a la digestión química.</li>
+<li>Microvilli: la membrana del plasma  lumenal de las células de epiteliales absortivas están tapizadas con microvilli densamente agrupados.</li>
+</p>
+</div

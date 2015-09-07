@@ -1,0 +1,74 @@
+<style>
+    .logotematica{
+    width: 250px;
+    height:250px;
+    background-size: contain;
+    display:block;
+    position: relative;
+    top: -50px;
+    margin-bottom: 0;
+    background-image: url(../images/logo.png);
+}
+.contenido{
+    background-color: #EDF3F3;
+}
+@font-face {
+    font-family: "FuturaBT-Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/ufonts.com_futurabt-bold-opentype.otf);
+    
+}
+
+.sub_tematica{
+    font-family: "FuturaBT-Bold";
+    color: black;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: -0.07em;
+    text-align: center;
+    margin-top: 0;
+}
+.nav_tematica{
+    list-style: none;
+}
+.item{
+    text-align: center;
+    display: block;
+}
+.item a{
+    color: black;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.item a:hover{
+    background-color: #EDF3F3;
+    text-decoration: none;
+}
+    .img_glandulas{
+        margin-bottom: 10px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#/" class="logotematica"></a>
+            <div class="apartado_tematica">
+                <h2 class="sub_tematica">sidibov</h2>
+                <ul class="nav_tematica" ng-repeat="val in content">
+                     <li class="item"><a href="{{val.link}}">{{val.titulo}}</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-9 contenido">
+             <h2>Glándulas salivares</h2>
+    <p>Al pastar u hojear, la comida se mastica solamente para ser mezclada con la saliva y  formar un bolo del tamaño adecuado para tragarse.  La saliva, es una mezcla de líquido de seroso y mucoso, se libera por el estímulo de masticar desde cinco pares de glándula.  Las  parótidas, que se localizan detrás el ángulo de la mandíbula; las submaxilaries, en los lados interiores de las parótidas; las sublinguales, en cada lado de la base de lengua; y las  molares inferiores y bucales  en las mejillas.1 Las unidades básicas de glándulas salivales son los grupos de células llamadas un acini. Estas células secretan un líquido que contiene agua, electrolitos, moco y enzimas, todos los cuales fluyen fuera del acini hacia los conductos colectores .</p>
+    <img src="../images/glandulas1.png" class="col-md-6 img_glandulas">
+    <img src="../images/glandulas2.png" class="col-md-6 img_glandulas">
+    <img src="../images/glandulas3.png" class="col-md-6 img_glandulas">
+    <img src="../images/glandulas4.png" class="col-md-6 img_glandulas">
+</div

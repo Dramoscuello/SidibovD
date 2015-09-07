@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Sidibov</title>
+    <meta name="description" content="sidibov, simulacion digital del sistema digestivo de los bovinos">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/nav.css">
+      <link rel="stylesheet" href="fonts.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="sidibov1App">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+      <span class="goTop icon-point-up"></span>
+      <header>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div id='cssmenu'>
+					<ul>
+					    <li><a ng-href='#/'>Inicio</a></li>
+					    <li><a ng-href='#/tematica'>Temática</a></li>
+					    <li><a ng-href='#/foro'>Foro</a></li>
+					    <li><a ng-href='#/contacto'>Contacto</a></li>
+					</ul>
+				    </div>
+                </div>
+                <div class="col-md-2"><a href="void:javascript(0)" class="users" data-toggle="modal" data-target=".login">Ingresar <span class="glyphicon glyphicon-triangle-bottom"></span></a></div>
+            </div>
+          </div>
+      </header>
+        <div ng-view=""></div>
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav_footer">
+                        <li><a href="#/tematica">Temática</a></li>
+                        <li><a href="#/foro">Foro</a></li>
+                        <li><a href="#/" class="logo_footer"></a></li>
+                        <li><a href="#/contacto">Contacto</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 copy">
+                    <h6>(c) copyright 2015</h6>
+                </div>
+            </div>
+          </div>
+      </footer>
+
+      <!-- LOGIN FLOTANTE -->
+        <div class='modal fade login' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel'>
+          <div class='modal-dialog'>
+            <div class='modal-content' id='contenido_modal'>
+                <div class='modal-header'>
+                  <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>X</span>
+                  </button>
+                  <h4 class='modal-title' id='myModalLabel'><span class='glyphicon glyphicon-log-in'></span> INGRESAR</h4>
+                </div>
+                <div class='modal-body'>
+                  <form class='form-horizontal'>
+                      <div class='form-group'>
+                        <label for='inputEmail3' class='col-md-3 control-label'><span class='glyphicon glyphicon-envelope'></span> E-mail:</label>
+                        <div class='col-md-9'>
+                          <input type='email' class='form-control' id='inputEmail3' placeholder='E-mail'>
+                        </div>
+                      </div>
+                      <div class='form-group'>
+                        <label for='inputPassword3' class='col-md-3 control-label'><span class='glyphicon glyphicon-lock'></span> Contraseña:</label>
+                        <div class='col-md-9'>
+                          <input type='password' class='form-control' id='inputPassword3' placeholder='Contraseña'>
+                        </div>
+                      </div>
+                      <div class='form-group'>
+                        <div class='col-md-12'>
+                          <div class='checkbox'>
+                            <label>
+                              <input type='checkbox'> Recordarme
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='form-group'>
+                        <div class='col-md-12'>
+                          <button type='submit' class='btn btn-info'><span class='glyphicon glyphicon-log-in'></span> Ingresar</button>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+                <div class='modal-footer'>
+                    <a href='void:javascript(0)' class='btn btn-default' onclick='ventanaRegistro()'>Registrarse</a>
+                    <a href='void:javascript(0)' class='btn btn-default' onclick='ventanaOlvidar()'>Olvidé mi contraseña</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- /LOGIN FLOTANTE -->
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<!--
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+-->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/cavidadoral.js"></script>
+        <script src="scripts/controllers/dientes.js"></script>
+        <script src="scripts/controllers/lengua.js"></script>
+        <script src="scripts/controllers/glandulassalivales.js"></script>
+        <script src="scripts/controllers/faringe.js"></script>
+        <script src="scripts/controllers/esofago.js"></script>
+        <script src="scripts/controllers/estomago.js"></script>
+        <script src="scripts/controllers/reticuloyrumen.js"></script>
+        <script src="scripts/controllers/omaso.js"></script>
+        <script src="scripts/controllers/abomaso.js"></script>
+        <script src="scripts/controllers/tematica.js"></script>
+        <script src="scripts/controllers/foro.js"></script>
+        <script src="scripts/controllers/contacto.js"></script>
+        <script src="scripts/controllers/introduccion.js"></script>
+        <script src="scripts/controllers/evaluacion.js"></script>
+        <script src="scripts/controllers/intestinodelgado.js"></script>
+        <script src="scripts/controllers/intestinogrueso.js"></script>
+        <script src="scripts/controllers/enfermedades.js"></script>
+        <!-- endbuild -->
+      <script src="scripts/nav.js"></script>
+      <script src="scripts/funciones.js"></script>
+      
+      <script>
+        function ventanaRegistro() {
+            document.getElementById("contenido_modal").innerHTML = "<div class='modal-header'>                  <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>X</span>                  </button>                  <h4 class='modal-title' id='myModalLabel'><span class='glyphicon glyphicon-ok'></span> Registrar</h4>                </div>                <div class='modal-body'>                  <form class='form-horizontal'>                      <div class='form-group'>               <label for='inputEmail3' class='col-md-3 control-label'><span class='glyphicon glyphicon-envelope'></span> E-mail:</label>                        <div class='col-md-9'>  <input type='email' class='form-control' id='inputEmail3' placeholder='E-mail'>                        </div>                  </div>                  <div class='form-group'>                   <label for='inputuser' class='col-md-3 control-label'><span class='glyphicon glyphicon-user'></span> Username:</label>                        <div class='col-md-9'>                          <input type='email' class='form-control' id='inputuser' placeholder='Username'>                        </div>                      </div>                      <div class='form-group'>         <label for='inputPassword3' class='col-md-3 control-label'><span class='glyphicon glyphicon-lock'></span> Contraseña:</label>          <div class='col-md-9'>                 <input type='password' class='form-control' id='inputPassword3' placeholder='Contraseña'>    </div>  </div>   <div class='form-group'>                        <div class='col-md-12'> <button type='submit' class='btn btn-info'><span class='glyphicon glyphicon-ok'></span> Registrar</button>   </div>  </div> </form>   </div>  <div class='modal-footer'>  <a href='void:javascript(0)' class='btn btn-default' onclick='ventanaLogin()'>Ingresar</a></div>";
+        }
+      </script>
+      <script>
+        function ventanaOlvidar() {
+            document.getElementById("contenido_modal").innerHTML = "<div class='modal-header'>               <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>X</span>                  </button>    <h4 class='modal-title' id='myModalLabel'><span class='glyphicon glyphicon-cog'></span> Olvidé contraseña</h4>      </div>                <div class='modal-body'>                  <form class='form-horizontal'>                      <div class='form-group'>                        <label for='inputEmail3' class='col-md-3 control-label'><span class='glyphicon glyphicon-envelope'</span> E-mail:</label>      <div class='col-md-9'> <input type='email' class='form-control' id='inputEmail3' placeholder='E-mail'>      </div>     </div>   <div class='form-group'>              <div class='col-md-12'>                  <button type='submit' class='btn btn-info'><span class='glyphicon glyphicon-cog'></span> Reestrablecer contraseña</button>          </div> </div>   </form> </div> <div class='modal-footer'>           <a href='void:javascript(0)' class='btn btn-default' onclick='ventanaLogin()'>Ingresar</a></div> </div>";
+        }
+      </script>
+      <script>
+        function ventanaLogin() {
+            document.getElementById("contenido_modal").innerHTML = "<div class='modal-header'>       <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>X</span>                  </button>  <h4 class='modal-title' id='myModalLabel'><span class='glyphicon glyphicon-log-in'></span> INGRESAR</h4>                </div>              <div class='modal-body'>   <form class='form-horizontal'>    <div class='form-group'>                        <label for='inputEmail3' class='col-md-3 control-label'><span class='glyphicon glyphicon-envelope'></span> E-mail:</label>          <div class='col-md-9'>                          <input type='email' class='form-control' id='inputEmail3' placeholder='E-mail'>           </div>      </div>     <div class='form-group'>                     <label for='inputPassword3' class='col-md-3 control-label'><span class='glyphicon glyphicon-lock'></span> Contraseña:</label>  <div class='col-md-9'>            <input type='password' class='form-control' id='inputPassword3' placeholder='Contraseña'>     </div>      </div>    <div class='form-group'><div class='col-md-12'>                  <div class='checkbox'>   <label> <input type='checkbox'> Recordarme  </label>  </div>                  </div>            </div>                      <div class='form-group'>   <div class='col-md-12'>                     <button type='submit' class='btn btn-info'><span class='glyphicon glyphicon-log-in'></span> Ingresar</button>  </div> </div></form>            </div>    <div class='modal-footer'>                    <a href='void:javascript(0)' class='btn btn-default' onclick='ventanaRegistro()'>Registrarse</a>          <a href='void:javascript(0)' class='btn btn-default' onclick='ventanaOlvidar()'>Olvidé mi contraseña</a>   </div>";
+        }
+      </script>
+      
+</body>
+</html>

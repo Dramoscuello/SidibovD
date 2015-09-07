@@ -1,0 +1,71 @@
+<style>
+    .logotematica{
+    width: 250px;
+    height:250px;
+    background-size: contain;
+    display:block;
+    position: relative;
+    top: -50px;
+    margin-bottom: 0;
+    background-image: url(../images/logo.png);
+}
+.contenido{
+    background-color: #EDF3F3;
+}
+@font-face {
+    font-family: "FuturaBT-Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/ufonts.com_futurabt-bold-opentype.otf);
+    
+}
+
+.sub_tematica{
+    font-family: "FuturaBT-Bold";
+    color: black;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: -0.07em;
+    text-align: center;
+    margin-top: 0;
+}
+.nav_tematica{
+    list-style: none;
+}
+.item{
+    text-align: center;
+    display: block;
+}
+.item a{
+    color: black;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.item a:hover{
+    background-color: #EDF3F3;
+    text-decoration: none;
+}
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#/" class="logotematica"></a>
+            <div class="apartado_tematica">
+                <h2 class="sub_tematica">sidibov</h2>
+                <ul class="nav_tematica" ng-repeat="val in content">
+                     <li class="item"><a href="{{val.link}}">{{val.titulo}}</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-9 contenido">
+             <h2>Intestino grueso</h2>
+    <p>Del intestino delgado, el kimo entra el intestino grueso. Con la excepción de algunos ácidos grasos volátiles y vitaminas, hay una pequeña absorción de alimentos nutritivos a este nivel (vanLoon, 1976). El intestino grueso es esa parte del tubo digestivo entre el ileon y el ano. Dependiendo de la especie, la ingesta del intestino delgado entra el intestino grueso por la válvula ileocecal (caballos, ruminates, los puercos) o válvula de ileocólica (perros). Dentro del intestino grueso, se reconocen tres segmentos principales:
+<li>El ciego es un fondo de saco que  en humanos lleva una extensión parecida a un gusano llamado el apéndice de vermiforme.</li>
+<li>El colon constituyen la mayor de  longitud del intestino grueso y se subclasifica en ascendente, transverso y descendente.</li>
+<li>El recto es el segmento más corto y terminal del tubo digestivo, continúa con el canal anal.</li>
+</p>
+</div

@@ -1,0 +1,69 @@
+<style>
+    .logotematica{
+    width: 250px;
+    height:250px;
+    background-size: contain;
+    display:block;
+    position: relative;
+    top: -50px;
+    margin-bottom: 0;
+    background-image: url(../images/logo.png);
+}
+.contenido{
+    background-color: #EDF3F3;
+}
+@font-face {
+    font-family: "FuturaBT-Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/ufonts.com_futurabt-bold-opentype.otf);
+    
+}
+
+.sub_tematica{
+    font-family: "FuturaBT-Bold";
+    color: black;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: -0.07em;
+    text-align: center;
+    margin-top: 0;
+}
+.nav_tematica{
+    list-style: none;
+}
+.item{
+    text-align: center;
+    display: block;
+}
+.item a{
+    color: black;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.item a:hover{
+    background-color: #EDF3F3;
+    text-decoration: none;
+}
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#/" class="logotematica"></a>
+            <div class="apartado_tematica">
+                <h2 class="sub_tematica">sidibov</h2>
+                <ul class="nav_tematica" ng-repeat="val in content">
+                     <li class="item"><a href="{{val.link}}">{{val.titulo}}</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-9 contenido">
+            <h2>Esofago</h2>
+    <p>El esófago  es un corredor músculo membranoso que conecta la faringe al rumen..1 Hay dos capas de músculo en el esófago: la circular y longitudinal. Cuándo estas capas de músculo se relajan y se  contraen,  ayudan al movimiento de los bolos de alimento. La perístalsis consiste en la relajación seguida por la contracción. La peristálsis tiene como resultado el progreso hacia adelante del alimento del segmento contraído al segmento relajado. El estiramiento de la pared del esófago por el bolo alimenticio, es la causa del peristaltismo</p>
+    <img src="../images/esofago.png">
+</div
+

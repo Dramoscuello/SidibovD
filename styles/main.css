@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "FuturaBT-Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/ufonts.com_futurabt-bold-opentype.otf);
+    
+}
+header{
+    background-color: #121B21;
+}
+h1{
+    margin-top: 90px;
+    font-family: "FuturaBT-Bold", Impact, sans-serif;;
+    font-size: 90px;
+/*    color: #653301;*/
+    color: white;
+    line-height: 61px;
+    word-spacing: 0.1em;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    
+}
+.sub{
+    font-family: "FuturaBT-Bold";
+/*    color: #653301;*/
+    color: white;
+    font-size: 42px;
+    letter-spacing: -0.07em;
+    
+}
+.users{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Helvetica,Arial,sans-serif;
+   display: block;
+    width: 90px;
+    margin-top: 12px;
+    padding: 4px;
+    border: 1px solid white;
+}
+.users:hover{
+    text-decoration: none;
+    color: white;
+}
+#logo{
+    display:block;
+    width:370px;
+    position: relative;
+    height:370px;
+    top:-50px;
+    z-index: 3;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+}
+#main{
+    background-color: #00AFC4;
+}
+#items{
+    text-align: center;
+    margin: 20px 0px;
+}
+.img{
+    width:168px;
+    height:143px;
+}
+.teoria{
+    background-image: url(../images/teoria.png);
+}
+.foro{
+    background-image: url(../images/foro.png);
+}
+.evaluacion{
+    background-image: url(../images/evaluacion.png);
+}
+.porque{
+    text-align: center;
+}
+footer {
+    clear: both;
+    background: #edf3f3 url(../images/lattice-5e08b610.gif) top repeat-x;
+    padding: 43px 0;
+}
+.nav_footer{
+    list-style: none;
+    text-align: center;
+}
+.nav_footer li{
+   display:inline-block;
+    margin: 0px 20px;
+}
+.nav_footer li a{
+    text-decoration: none;
+        color: #535b60;
+    font-weight: bold;
+}
+.logo_footer{
+    text-align: center;
+    display:block;
+    width:50px;
+    height:50px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+}
+.nav_footer li, .logo_footer{
+    vertical-align: middle;
+}
+.copy{
+    color: #535b60;    
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.copy h6{
+    font-size: 10px;
+    font-weight: bold;
+}
+.goTop{
+    display: none;
+    cursor: pointer;
+    background: rgba(2, 73, 89,0);
+    padding: 10px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: black;
+    z-index: 1001;
+}

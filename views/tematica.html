@@ -1,0 +1,81 @@
+<style>
+    .logotematica{
+    width: 250px;
+    height:250px;
+    background-size: contain;
+    display:block;
+    position: relative;
+    top: -50px;
+    margin-bottom: 0;
+    background-image: url(../images/logo.png);
+}
+.contenido{
+    background-color: #EDF3F3;
+    padding: 20px 10px;
+}
+@font-face {
+    font-family: "FuturaBT-Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/ufonts.com_futurabt-bold-opentype.otf);
+    
+}
+
+.sub_tematica{
+    font-family: "FuturaBT-Bold";
+    color: black;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: -0.07em;
+    text-align: center;
+    margin-top: 0;
+}
+.nav_tematica{
+    list-style: none;
+}
+.item{
+    text-align: center;
+    display: block;
+}
+.item a{
+    color: black;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.item a:hover{
+    background-color: #EDF3F3;
+    text-decoration: none;
+}
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#/" class="logotematica"></a>
+            <div class="apartado_tematica">
+                <h2 class="sub_tematica">sidibov</h2>
+                <ul class="nav_tematica" ng-repeat="val in content">
+                     <li class="item"><a href="{{val.link}}">{{val.titulo}}</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-9 contenido"><h2>Introducción</h2><p>Iis dolore nulla se quamquam. Quorum coniunctione cupidatat quem aliquip, nam 
+            eram cernantur familiaritatem, senserit amet do eiusmod despicationes, quamquam 
+            ex legam voluptate. Hic et esse arbitror in sint e quibusdam do multos. Illum 
+            ingeniis ita noster anim eu aliquip varias magna incurreret quae. Hic anim 
+            ullamco cupidatat, fabulas sempiternum o cernantur, id expetendis de nostrud se 
+            se fugiat noster enim quamquam ab litteris noster dolore eu fugiat te aut quorum 
+            fidelissimae si nostrud aute fabulas senserit, o in nulla nisi minim. Incurreret 
+            exercitation aut proident, eram e litteris e elit et non enim quamquam tempor, 
+            sed iis illum excepteur de eiusmod quo fabulas, se nostrud fidelissimae est ab 
+            irure excepteur, e duis iudicem eiusmod. </p>
+            <div class="col-md-10">
+                <iframe src="../assets/Vaca3D.html" width="100%" height="400px" allowfullscreen></iframe>
+            </div>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+<style>
+    .box_contacto{
+        background: transparent url(images/paper.png) repeat-x top left;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        opacity: .9;
+        overflow: hidden;
+        background-position: 120px top;
+        padding: 3%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-left: 1px solid #BEC5A1;
+        border-bottom: 1px solid #BEC5A1;
+        border-right: 1px solid #BEC5A1;
+    }
+    .box_contacto input:focus{
+        box-shadow: 0px 0px 5px #BEC5A1;
+        border: 1px solid #BEC5A1;
+    }
+    textarea:focus{
+        box-shadow: 0px 0px 5px #BEC5A1;
+        border: 1px solid #BEC5A1;
+    }
+    .logo_contacto{
+        width: 350px;
+        height:350px;
+        background-size: contain;
+        display:block;
+        position: relative;
+        top: -50px;
+        margin-bottom: 0;
+        background-image: url(../images/logo.png);
+    }
+    .aside_left_contacto h2{
+        text-align: center;
+        font-weight: bold;
+        margin-top: 0px;
+    }
+}
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 aside_left_contacto">
+            <a href="#/" class="logo_contacto"></a>
+            <h2><span class="glyphicon glyphicon-envelope"></span> CONTACTO</h2>
+        </div>
+        <div class="col-md-8 box_contacto">
+            <h3>¡Contáctanos!</h3>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-md-2 control-label"><span class="glyphicon glyphicon-user"></span> Nombres y apellidos:</label>
+                <div class="col-md-10">
+                  <input type="email" class="form-control nombre_contacto" id="inputEmail3" placeholder="Nombres y apellidos">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-md-2 control-label"><span class="glyphicon glyphicon-inbox"></span> Email:</label>
+                <div class="col-md-10">
+                  <input type="email" class="form-control" id="inputPassword3" placeholder="Email">
+                </div>
+              </div>
+                <div class="form-group">
+                <label for="inputPassword3" class="col-md-2 control-label"><span class="glyphicon glyphicon-earphone"></span> Telefono:</label>
+                <div class="col-md-10">
+                  <input type="tel" class="form-control" id="inputPassword3" placeholder="Telefono">
+                </div>
+              </div>
+                <div class="form-group">
+                <label for="inputPassword3" class="col-md-2 control-label"><span class="glyphicon glyphicon-pencil"></span> Mensaje:</label>
+                <div class="col-md-10">
+                  <textarea class="form-control" rows="3" placeholder="Escribemos algo..."></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">Enviar</button>
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>

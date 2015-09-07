@@ -1,0 +1,69 @@
+<style>
+    .logotematica{
+    width: 250px;
+    height:250px;
+    background-size: contain;
+    display:block;
+    position: relative;
+    top: -50px;
+    margin-bottom: 0;
+    background-image: url(../images/logo.png);
+}
+.contenido{
+    background-color: #EDF3F3;
+}
+@font-face {
+    font-family: "FuturaBT-Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/ufonts.com_futurabt-bold-opentype.otf);
+    
+}
+
+.sub_tematica{
+    font-family: "FuturaBT-Bold";
+    color: black;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: -0.07em;
+    text-align: center;
+    margin-top: 0;
+}
+.nav_tematica{
+    list-style: none;
+}
+.item{
+    text-align: center;
+    display: block;
+}
+.item a{
+    color: black;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.item a:hover{
+    background-color: #EDF3F3;
+    text-decoration: none;
+}
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#/" class="logotematica"></a>
+            <div class="apartado_tematica">
+                <h2 class="sub_tematica">sidibov</h2>
+                <ul class="nav_tematica" ng-repeat="val in content">
+                     <li class="item"><a href="{{val.link}}">{{val.titulo}}</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-9 contenido">
+             <h2>Reticulo y rumen</h2>
+    <p>El retículo y rumen son los primeros estómagos de los rumiantes. El contenido del retículo es mezclado con los del rumen casi continuamente (una vez por minuto). Ambos estómagos comparten una población densa de microorganismos (bacteria, protozoos y fungi) y frecuentemente son llamados el "retículo-rumen." El rumen es un vaso de fermentación grande que puede contener hasta 100-120 kg de materia en digestión. Las partículas de fibra se quedan en el rumen de 20 a 48 horas porque la fermentación bacteriana es un proceso lento.
+El retículo es una intersección de caminos donde partículas que entran o salgan del rumen están separadas. Solo las partículas que tienen un tamaño pequeño (<1-2 mm) o son densos (>1.2 g/ml) pueden proceder al tercer estómago
+</p>
+</div

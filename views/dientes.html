@@ -1,0 +1,70 @@
+<style>
+    .logotematica{
+    width: 250px;
+    height:250px;
+    background-size: contain;
+    display:block;
+    position: relative;
+    top: -50px;
+    margin-bottom: 0;
+    background-image: url(../images/logo.png);
+}
+.contenido{
+    background-color: #EDF3F3;
+}
+@font-face {
+    font-family: "FuturaBT-Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/ufonts.com_futurabt-bold-opentype.otf);
+    
+}
+
+.sub_tematica{
+    font-family: "FuturaBT-Bold";
+    color: black;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: -0.07em;
+    text-align: center;
+    margin-top: 0;
+}
+.nav_tematica{
+    list-style: none;
+}
+.item{
+    text-align: center;
+    display: block;
+}
+.item a{
+    color: black;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.item a:hover{
+    background-color: #EDF3F3;
+    text-decoration: none;
+}
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#/" class="logotematica"></a>
+            <div class="apartado_tematica">
+                <h2 class="sub_tematica">sidibov</h2>
+                <ul class="nav_tematica" ng-repeat="val in content">
+                     <li class="item"><a href="{{val.link}}">{{val.titulo}}</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-9 contenido">
+            <h2>Los Dientes.</h2>
+    <p>La función de los dientes  es el primer proceso de digestión mecánica, la molienda de partículas grandes de los alimentos en partículas más pequeñas (vanLoon, 1976 in ).  Los herbívoro tienen dientes compuestos llamados dientes Hypsodontes y otros animales tienen dientes simples o Brachydont.  La dentición de herbívoro debe permitir el continuo y considerable desgaste de  las superficies masticatorias. Las cabras, como en otros  rumiantes, carecen de los incisivo superiores . En cambio, poseen una almohadilla dental endurecida, contra la que  muerden.</p>
+    <img src="../images/dientes1.png">
+    <img src="../images/dientes2.png">
+</div
+
